@@ -12,6 +12,10 @@ Yes. I am aware of the concept of [functionality plugins](http://wpcandy.com/tea
 PHP 5.4+
 WordPress 4.0+
 
+##Activation
+##Installation
+ Make sure that the requirements are met and then include or require the file init.php found at the root of this package.
+
 ##Recommended plugins
 Here are some plugins that we like and usually use with almost every installation of WordPress:
 
