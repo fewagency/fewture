@@ -34,7 +34,7 @@ Here are some plugins that we like and usually use with almost every installatio
 ##Helpers
 fewture comes with a couple of helper functions to make development easier:
 
-* `fewture\dd($var)` - Dump and die. Wraps the dumped var in <pre>
-* `fewture\vd($var, $before = '', $after = '')` - Var dump. Wraps the dumped value in <pre> which in turn is wrapped in $before and $after.
+* `fewture\dd($var)` - Dump and die. Wraps the dumped var in &lt;pre&gt;
+* `fewture\vd($var, $before = '', $after = '')` - Var dump. Wraps the dumped value in &lt;pre&gt; which in turn is wrapped in $before and $after.
 
 
