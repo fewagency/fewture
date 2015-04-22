@@ -1,0 +1,8 @@
+/* CSS that should affect all or most installs of fewture */
+
+input[name="save"],
+input[name="publish"] {
+  padding: 27px !important;
+  line-height: 1px !important;
+  font-size: 27px !important;
+}
