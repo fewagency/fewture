@@ -9,7 +9,8 @@ $template_dir = get_template_directory();
 $fewture_lib_path = $template_dir . '/fewture/';
 
 $fewture_includes = [
-  $fewture_lib_path . 'helpers.php'
+  $fewture_lib_path . 'helpers.php',
+  $fewture_lib_path . 'functions.php'
 ];
 
 if(is_admin()) { // Backend
