@@ -15,3 +15,9 @@ function admin_scripts() {
 
 }
 add_action('admin_enqueue_scripts', __NAMESPACE__ . '\\admin_scripts');
+
+// Move Yoast to bottom
+function yoast_to_bottom() {
+  return 'low';
+}
+add_filter( 'wpseo_metabox_prio', __NAMESPACE__ . '\\yoast_to_bottom');
