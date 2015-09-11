@@ -29,14 +29,15 @@ add_action('widgets_init', __NAMESPACE__ . '\\remove_recent_comments_style');
 function add_js_vars() {
 
   $html = '<script>';
-  $html .= 'var fewtureData = {};';
-  $html .= 'fewtureData.baseUrl = \'' . get_bloginfo('wpurl') . '\';';
-  $html .= 'fewtureData.templateDirectoryUri = \'' . get_template_directory_uri() . '\';';
-  $html .= 'fewtureData.ajaxUrl = \'' . admin_url('admin-ajax.php') . '\';';
+  $html .= 'var fewtureData={};';
+  $html .= 'fewtureData.baseUrl=\'' . get_bloginfo('wpurl') . '\';';
+  $html .= 'fewtureData.templateDirectoryUri=\'' . get_template_directory_uri() . '\';';
+  $html .= 'fewtureData.ajaxUrl=\'' . admin_url('admin-ajax.php') . '\';';
   $html .= '</script>';
 
   echo $html;
 
 
 }
-add_action('wp_footer', __NAMESPACE__ . '\\add_js_vars');
+//add_action('wp_head', __NAMESPACE__ . '\\add_js_vars', 1);
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\add_js_vars', 1);
